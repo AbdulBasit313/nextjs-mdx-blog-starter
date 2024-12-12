@@ -83,8 +83,6 @@ You can integrate analytics easily:
 1. Simple Analytics or Vercel Analytics: Quick and easy to set up.
 2. Google Analytics 4: Also straightforward.
 
-##
-
 ## Deployment Notes
 
 Before deploying, add environment variables from .env.local wherever you are deploying:
