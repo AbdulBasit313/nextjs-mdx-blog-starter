@@ -21,12 +21,18 @@ export async function generateStaticParams(): Promise<StaticParams[]> {
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export default async function Page({ params: { slug } }: PageProps) {
+export default async function Page(props: PageProps) {
+  const params = await props.params;
+
+  const {
+    slug
+  } = params;
+
   const post = await getBlog(slug)
 
   if (!post) return notFound()

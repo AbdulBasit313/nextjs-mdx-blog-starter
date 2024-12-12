@@ -5,12 +5,13 @@ import { getBlog } from '@/services/blogs'
 import { Metadata } from 'next'
 
 interface PageParams {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
-export async function generateMetadata({ params }: PageParams): Promise<Metadata | null> {
+export async function generateMetadata(props: PageParams): Promise<Metadata | null> {
+  const params = await props.params;
   const post = await getBlog(params.slug)
 
   if (!post) return null

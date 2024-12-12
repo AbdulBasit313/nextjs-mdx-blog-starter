@@ -4,9 +4,9 @@ import './globals.css'
 
 const quicksand = Quicksand({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
-export const title = 'Resources Library'
+const title = 'Resources Library'
 
-export const description =
+const description =
   'Discover a curated collection of the latest resources, templates, and strategies designed to help you excel in technical interviews and build your expertise with confidence'
 
 const url = process.env.NEXT_PUBLIC_SITE_URL
