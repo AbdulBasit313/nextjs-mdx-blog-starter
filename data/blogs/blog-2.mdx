@@ -1,0 +1,32 @@
+---
+title: Advanced JavaScript Concepts
+shortDescription: Deep dive into closures, prototypes, and asynchronous programming in JavaScript.
+cover: https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+slug: advanced-javascript-concepts
+category: JavaScript
+publishedDate: '2024-05-25'
+---
+
+JavaScript is a versatile and powerful language that enables developers to create dynamic and interactive web applications. To take full advantage of JavaScript, it’s essential to understand its advanced concepts, such as **closures**, **prototypes**, and **asynchronous programming**.
+
+---
+
+## Closures
+
+A closure is a function that "remembers" the variables from its lexical scope even when executed outside that scope.
+
+### Example:
+
+```javascript
+function createCounter() {
+  let count = 0
+  return function () {
+    count++
+    return count
+  }
+}
+
+const counter = createCounter()
+console.log(counter()) // 1
+console.log(counter()) // 2
+```
