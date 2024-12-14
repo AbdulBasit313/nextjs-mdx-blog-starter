@@ -33,9 +33,11 @@ const BlogCard: FC<BlogCardProps> = ({ post }) => {
           className="rounded-md object-cover transition-transform duration-300 hover:scale-125"
           src={cover}
           alt={title}
-          layout="fill"
-          placeholder="blur"
-          blurDataURL="/placeholder.png" // Replace with a suitable placeholder
+          fill={true}
+          sizes="100%"
+          // Optional: Replace with a suitable placeholder
+          // placeholder="blur"
+          // blurDataURL="/placeholder.png"
         />
       </figure>
 

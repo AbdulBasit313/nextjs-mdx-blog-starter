@@ -26,10 +26,12 @@ const BlogCard: FC<BlogCardProps> = ({ post }) => {
           <Image
             src={cover}
             alt={title}
-            layout="fill"
+            fill={true}
+            sizes="100%"
             className="rounded-xl object-cover"
-            placeholder="blur"
-            blurDataURL="/placeholder.png" // Add a placeholder image URL
+            // Optional: Replace with a suitable placeholder
+            // placeholder="blur"
+            // blurDataURL="/placeholder.png"
           />
         </figure>
 

@@ -27,11 +27,9 @@ interface PageProps {
 }
 
 export default async function Page(props: PageProps) {
-  const params = await props.params;
+  const params = await props.params
 
-  const {
-    slug
-  } = params;
+  const { slug } = params
 
   const post = await getBlog(slug)
 
@@ -54,8 +52,8 @@ export default async function Page(props: PageProps) {
             <Image
               src={post.cover}
               alt={post.title}
-              layout="fill"
-              objectFit="cover"
+              fill={true}
+              sizes="100%"
               className="rounded-md"
             />
             {/* <figcaption className="mt-2 text-center text-sm text-gray-500">
