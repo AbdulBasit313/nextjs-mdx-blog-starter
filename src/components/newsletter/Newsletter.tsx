@@ -20,7 +20,7 @@ const Newsletter = () => {
             placeholder="yourname@email.com"
             required
           />
-          <button className="mt-4 w-full rounded bg-theme px-4 py-2 text-white hover:bg-theme-hover focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:bg-gray-400 md:mt-auto md:w-auto">
+          <button className="mt-4 w-full rounded-sm bg-theme px-4 py-2 text-white hover:bg-theme-hover focus:outline-hidden focus:ring-2 focus:ring-blue-300 disabled:bg-gray-400 md:mt-auto md:w-auto">
             Submit
           </button>
         </form>

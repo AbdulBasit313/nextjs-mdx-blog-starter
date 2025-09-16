@@ -38,7 +38,7 @@ const Faq: React.FC<FaqProps> = ({ items }) => {
         <div key={index} className="mb-3 rounded-2xl border border-gray-300 p-4 hover:bg-slate-50">
           <button
             onClick={() => toggleFaq(index)}
-            className="flex w-full items-center justify-between focus:outline-none">
+            className="flex w-full items-center justify-between focus:outline-hidden">
             <h4 className="text-primary flex-1 text-left text-lg font-semibold">{title}</h4>
             <ChevronDown
               className={`h-6 w-6 transition-transform ${

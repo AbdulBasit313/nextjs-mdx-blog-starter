@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
           {/* nav links */}
           <div
-            className={`absolute left-0 right-0 -z-10 flex w-full flex-col gap-3 bg-white p-3 shadow transition-all duration-300 ease-in-out md:relative md:left-0 md:right-auto md:top-auto md:z-auto md:flex-row md:shadow-none ${showNav ? 'top-[54px]' : 'top-[-165px]'}`}>
+            className={`absolute left-0 right-0 -z-10 flex w-full flex-col gap-3 bg-white p-3 shadow-sm transition-all duration-300 ease-in-out md:relative md:left-0 md:right-auto md:top-auto md:z-auto md:flex-row md:shadow-none ${showNav ? 'top-[54px]' : 'top-[-165px]'}`}>
             {navLinks.map(({ title, link }, index) => (
               <Link
                 key={index}
@@ -69,7 +69,7 @@ const Navbar = () => {
           <a
             href=""
             type="button"
-            className="rounded-lg border bg-theme px-4 py-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-orange-500 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 sm:px-5 sm:py-2.5"
+            className="rounded-lg border bg-theme px-4 py-2 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-orange-500 focus:z-10 focus:outline-hidden focus:ring-4 focus:ring-gray-100 sm:px-5 sm:py-2.5"
             target="_blank">
             Write for us
           </a>
